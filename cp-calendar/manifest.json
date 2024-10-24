@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "CP Calendar",
+  "version": "1.0",
+  "description": "An extension to track competitive programming contests.",
+  "action": {
+    "default_popup": "public/index.html",
+    "default_icon": {
+      "16": "public/icons/icon-16.png",
+      "48": "public/icons/icon-48.png",
+      "128": "public/icons/icon-128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "activeTab",
+    "identity"
+  ],
+  "background": {
+    "service_worker": "public/background.js"
+  },
+  "icons": {
+    "16": "public/icons/icon-16.png",
+    "48": "public/icons/icon-48.png",
+    "128": "public/icons/icon-128.png"
+  },
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}

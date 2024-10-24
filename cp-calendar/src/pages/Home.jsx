@@ -6,27 +6,15 @@ import DurationFilter from '../components/DurationFilter';
 import PlatformFilter from '../components/PlatformFilter';
 
 const Home = () => {
-  const [durationFilter, setDurationFilter] = useState('all');
-  const [selectedPlatforms, setSelectedPlatforms] = useState([]);
-
-  const handleDurationChange = (value) => {
-    setDurationFilter(value);
-  };
-
-  const handlePlatformChange = (platform) => {
-    setSelectedPlatforms((prev) =>
-      prev.includes(platform)
-        ? prev.filter((p) => p !== platform)
-        : [...prev, platform]
-    );
-  };
+  const [durationFilter, setDurationFilter] = useState('');
+  const [platformFilter, setPlatformFilter] = useState('');
 
   return (
-    <div className="home">
-      <h2>Today & Upcoming Contests</h2>
-      <DurationFilter value={durationFilter} onChange={handleDurationChange} />
-      <PlatformFilter selectedPlatforms={selectedPlatforms} onChange={handlePlatformChange} />
-      <ContestList />
+    <div>
+      <h2>Upcoming Contests</h2>
+      <DurationFilter setDurationFilter={setDurationFilter} />
+      <PlatformFilter setPlatformFilter={setPlatformFilter} />
+      <ContestList durationFilter={durationFilter} platformFilter={platformFilter} />
     </div>
   );
 };

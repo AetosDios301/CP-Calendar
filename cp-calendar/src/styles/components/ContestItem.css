@@ -1,0 +1,64 @@
+.contest-item {
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contest-item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.contest-item__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.contest-item__platform {
+    font-size: 14px;
+    color: #666;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #f0f0f0;
+}
+
+.contest-item__time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.contest-item__duration {
+    color: #888;
+}
+
+.contest-item__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.contest-item__button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.contest-item__button--calendar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.contest-item__button--calendar:hover {
+    background-color: #45a049;
+}

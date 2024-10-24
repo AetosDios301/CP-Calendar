@@ -1,0 +1,36 @@
+.tabs {
+    margin-bottom: 16px;
+}
+
+.tabs__list {
+    display: flex;
+    list-style: none;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tabs__item {
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.tabs__item--active {
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+    margin-bottom: -2px;
+}
+
+.tabs__content {
+    padding: 16px 0;
+}
+
+.tabs__panel {
+    display: none;
+}
+
+.tabs__panel--active {
+    display: block;
+}
